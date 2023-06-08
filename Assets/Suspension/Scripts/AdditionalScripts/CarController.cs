@@ -56,7 +56,7 @@ public class CarController : MonoBehaviour, ISimpleInputDraggable
 		//Debug.Log(targetAcceleration);
 		//Debug.Log(targetSteer);
 
-		if (breaks.xAxis.value == -1 || !Enable) {
+		if (breaks.xAxis.value == 1 || !Enable) {
 			CurrentAcceleration = 0;
 			CurrentBrake = Mathf.MoveTowards(CurrentBrake, 1, AccelerationBrakeTorque * Time.deltaTime);
 		} else {

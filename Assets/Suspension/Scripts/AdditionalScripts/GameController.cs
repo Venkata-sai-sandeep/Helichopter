@@ -82,7 +82,7 @@ public class GameController : MonoBehaviour {
 		CurrentCar.Enable = true;
 
 		CurrebtViewPoints = CurrentCar.GetComponent<ViewPoints>();
-		CameraController.SetViewPoints(CurrebtViewPoints);
+		//CameraController.SetViewPoints(CurrebtViewPoints);
 	}
 
 	void SetTimeScale (float newScale) {

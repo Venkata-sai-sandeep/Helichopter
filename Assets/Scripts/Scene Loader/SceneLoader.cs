@@ -19,6 +19,6 @@ public class SceneLoader : MonoBehaviour
 
     public void loadCareerMode()
     {
-
+        SceneManager.LoadScene("CareerMode");
     }
 }
