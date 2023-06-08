@@ -790,30 +790,8 @@ PrefabInstance:
       propertyPath: steeringWheel
       value: 
       objectReference: {fileID: 254562404}
-    - target: {fileID: 1190666486964067854, guid: 433a50422b90b154fa3a3d148247390c, type: 3}
-      propertyPath: CameraController
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 433a50422b90b154fa3a3d148247390c, type: 3}
---- !u!1 &1065172064 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 461954225822407392, guid: 433a50422b90b154fa3a3d148247390c, type: 3}
-  m_PrefabInstance: {fileID: 1065172063}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1065172065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1065172064}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f695805ea3e08ba479d3b7f80f42f809, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progress: 0
 --- !u!224 &1117571347 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224662034053572690, guid: afec60b2ce5345c4782cc0a45e5fa926, type: 3}
@@ -846,7 +824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1389508433
 Camera:
   m_ObjectHideFlags: 0
