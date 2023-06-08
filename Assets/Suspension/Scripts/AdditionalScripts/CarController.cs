@@ -22,6 +22,7 @@ public class CarController : MonoBehaviour, ISimpleInputDraggable
 
 	public AxisInputUIArrows axisinput;
 	public SteeringWheel steeringWheel;
+	public AxisInputUIArrows breaks;
 	Rigidbody RB;
 	HashSet<WheelPreset> AllWheels = new HashSet<WheelPreset>();
 	float CurrentAcceleration;
@@ -55,7 +56,7 @@ public class CarController : MonoBehaviour, ISimpleInputDraggable
 		//Debug.Log(targetAcceleration);
 		//Debug.Log(targetSteer);
 
-		if (Input.GetButton("Jump") || !Enable) {
+		if (breaks.xAxis.value == -1 || !Enable) {
 			CurrentAcceleration = 0;
 			CurrentBrake = Mathf.MoveTowards(CurrentBrake, 1, AccelerationBrakeTorque * Time.deltaTime);
 		} else {
