@@ -1,12 +1,17 @@
+using SimpleInputNamespace;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CameraRotation : MonoBehaviour
+
+public class CameraRotation : MonoBehaviour, ISimpleInputDraggable
 {
     private Transform target;
     public float rotationSpeed = 1f;
     private Vector3 initialMousePosition;
     private bool isRotation = true;
+    //public SteeringWheel steeringwheel;
 
     public void Awake()
     {
@@ -19,6 +24,8 @@ public class CameraRotation : MonoBehaviour
             if (EventSystem.current.IsPointerOverGameObject())
             {
                 // Check if the mouse click is over a UI element
+                // gameObject.GetComponent<>
+                Debug.Log("yes");
                 isRotation = false;
                 return; 
             }
@@ -41,5 +48,20 @@ public class CameraRotation : MonoBehaviour
 
             initialMousePosition = currentPosition;
         }
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        throw new System.NotImplementedException();
     }
 }
