@@ -85,6 +85,8 @@ public class GameController : MonoBehaviour {
 		//CameraController.SetViewPoints(CurrebtViewPoints);
 	}
 
+
+
 	void SetTimeScale (float newScale) {
 		Time.timeScale = newScale;
 		TimeScaleText.text = "Time scale: " + Time.timeScale.ToString("#0.#");
