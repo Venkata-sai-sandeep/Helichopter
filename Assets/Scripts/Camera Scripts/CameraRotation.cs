@@ -22,9 +22,12 @@ public class CameraRotation : MonoBehaviour
                 isRotation = false;
                 return; 
             }
+            else
+            {
+                initialMousePosition = Input.mousePosition;
+                isRotation = true;
+            }
             
-            initialMousePosition = Input.mousePosition;
-            isRotation = true;
                 
         }
 

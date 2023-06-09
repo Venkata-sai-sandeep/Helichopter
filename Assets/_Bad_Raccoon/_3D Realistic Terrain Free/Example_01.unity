@@ -2401,6 +2401,18 @@ PrefabInstance:
       propertyPath: steeringWheel
       value: 
       objectReference: {fileID: 1525821064}
+    - target: {fileID: 573491550403873864, guid: 433a50422b90b154fa3a3d148247390c, type: 3}
+      propertyPath: MaxBrakeTorque
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 573491550403873864, guid: 433a50422b90b154fa3a3d148247390c, type: 3}
+      propertyPath: MaxMotorTorque
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 573491550403873864, guid: 433a50422b90b154fa3a3d148247390c, type: 3}
+      propertyPath: AccelerationBrakeTorque
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 1190666486964067854, guid: 433a50422b90b154fa3a3d148247390c, type: 3}
       propertyPath: CameraController
       value: 
