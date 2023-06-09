@@ -5,11 +5,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-public class CameraRotation : MonoBehaviour, ISimpleInputDraggable
+public class CameraRotation : MonoBehaviour
 {
     private Transform target;
     public float rotationSpeed = 1f;
-    private Vector3 initialMousePosition;
+    private Vector3 initialTouchPosition;
     private bool isRotation = true;
     //public SteeringWheel steeringwheel;
 
@@ -21,33 +21,41 @@ public class CameraRotation : MonoBehaviour, ISimpleInputDraggable
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (EventSystem.current.IsPointerOverGameObject())
+            if (IsPointerOverUIObject(Input.mousePosition))
             {
-                // Check if the mouse click is over a UI element
-                // gameObject.GetComponent<>
-                Debug.Log("yes");
+                // Check if the touch is over a UI element
                 isRotation = false;
-                return; 
+                return;
             }
-            else
-            {
-                initialMousePosition = Input.mousePosition;
-                isRotation = true;
-            }
-            
-                
+            initialTouchPosition = Input.mousePosition;
+            isRotation = true;
         }
+
+
 
         if (Input.GetMouseButton(0) && isRotation)
         {
             Vector3 currentPosition = Input.mousePosition;
-            Vector3 delta = currentPosition - initialMousePosition;
+            Vector3 delta = currentPosition - initialTouchPosition;
+
+
 
             float rotationAmount = delta.x * rotationSpeed;
             transform.RotateAround(target.position, Vector3.up, rotationAmount);
 
-            initialMousePosition = currentPosition;
+
+
+            initialTouchPosition = currentPosition;
         }
+    }
+    bool IsPointerOverUIObject(Vector2 position)
+    {
+        EventSystem eventSystem = EventSystem.current;
+        PointerEventData eventData = new PointerEventData(eventSystem);
+        eventData.position = position;
+        System.Collections.Generic.List<RaycastResult> results = new System.Collections.Generic.List<RaycastResult>();
+        eventSystem.RaycastAll(eventData, results);
+        return results.Count > 0;
     }
 
     public void OnPointerDown(PointerEventData eventData)
