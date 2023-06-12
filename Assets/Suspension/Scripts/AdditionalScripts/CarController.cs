@@ -47,12 +47,12 @@ public class CarController : MonoBehaviour, ISimpleInputDraggable
 
 	private void Update () {
 		 
-		float targetAcceleration = Input.GetAxis("Vertical");//Removed
-		float targetSteer = Input.GetAxis("Horizontal"); // Removed
+		//float targetAcceleration = Input.GetAxis("Vertical");//Removed
+		//float targetSteer = Input.GetAxis("Horizontal"); // Removed
 		//string movement = axisinput.yAxis.value;//.ToString();
 		//Debug.Log(movement);
-		//float targetAcceleration = axisinput.yAxis.value;
-		//float targetSteer = steeringWheel.axis.value;
+		float targetAcceleration = axisinput.yAxis.value;
+		float targetSteer = steeringWheel.axis.value;
 		//Debug.Log(targetAcceleration);
 		//Debug.Log(targetSteer);
 
