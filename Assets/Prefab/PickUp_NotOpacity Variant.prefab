@@ -830,9 +830,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1009668367819096, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
+      propertyPath: m_TagString
+      value: Front wheel
+      objectReference: {fileID: 0}
     - target: {fileID: 1218861183069470, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
       propertyPath: m_Name
-      value: PickUp_NotOpacity Variant
+      value: PickUp_NotOpacity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218861183069470, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1363048041059852, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
+      propertyPath: m_TagString
+      value: Front wheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502195139667378, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
+      propertyPath: m_TagString
+      value: Back wheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612511992037176, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
+      propertyPath: m_TagString
+      value: Back wheel
       objectReference: {fileID: 0}
     - target: {fileID: 4506033935405730, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
       propertyPath: m_RootOrder
@@ -852,7 +872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4506033935405730, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.62
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4506033935405730, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
       propertyPath: m_LocalPosition.y
@@ -860,7 +880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4506033935405730, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4506033935405730, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
       propertyPath: m_LocalRotation.w
@@ -877,6 +897,14 @@ PrefabInstance:
     - target: {fileID: 4506033935405730, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65074763949659416, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8153943
+      objectReference: {fileID: 0}
+    - target: {fileID: 65074763949659416, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
+      propertyPath: m_Center.y
+      value: 0.85769695
       objectReference: {fileID: 0}
     - target: {fileID: 114868046857288630, guid: a47e79fe47d3af74192ebb2a8952f837, type: 3}
       propertyPath: MaxMotorTorque
